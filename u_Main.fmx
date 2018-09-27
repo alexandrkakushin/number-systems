@@ -1,0 +1,57 @@
+object fmMain: TfmMain
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = #1057#1080#1089#1090#1077#1084#1099' '#1089#1095#1080#1089#1083#1077#1085#1080#1103
+  ClientHeight = 346
+  ClientWidth = 640
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCloseQuery = FormCloseQuery
+  DesignerMasterStyle = 0
+  object sbFooter: TStatusBar
+    Position.Y = 324.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 640.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object mMain: TMainMenu
+    Left = 24
+    Top = 264
+    object miFile: TMenuItem
+      Text = #1060#1072#1081#1083
+      object miExit: TMenuItem
+        Locked = True
+        Text = #1042#1099#1093#1086#1076
+        OnClick = miExitClick
+      end
+    end
+    object miActions: TMenuItem
+      Text = #1044#1077#1081#1089#1090#1074#1080#1103
+      object miNormalForm: TMenuItem
+        Locked = True
+        Text = #1055#1088#1077#1076#1089#1090#1072#1074#1083#1077#1085#1080#1077' '#1095#1080#1089#1083#1072' '#1074' '#1085#1086#1088#1084#1072#1083#1100#1085#1086#1081' '#1092#1086#1088#1084#1077
+      end
+      object miTransfer: TMenuItem
+        Locked = True
+        Text = #1055#1077#1088#1077#1074#1086#1076' '#1095#1080#1089#1083#1072' '#1080#1079' '#1086#1076#1085#1086#1081' '#1057#1057' '#1074' '#1076#1088#1091#1075#1091#1102
+      end
+      object miBinary: TMenuItem
+        Locked = True
+        Text = #1054#1090#1086#1073#1088#1072#1078#1077#1085#1080#1077' '#1095#1080#1089#1083#1072' '#1074' '#1076#1074#1086#1080#1095#1085#1099#1093' '#1082#1086#1076#1072#1093
+      end
+    end
+    object miHelp: TMenuItem
+      Text = #1057#1087#1088#1072#1074#1082#1072
+      object miAbout: TMenuItem
+        Locked = True
+        Text = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
+        OnClick = miAboutClick
+      end
+    end
+  end
+end
